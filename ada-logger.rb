@@ -17,7 +17,4 @@ def write_to_file(message)
   File.open("ada-log.txt", 'a+') {|f| f.puts(message)}
 end
 
-while true
-  write_to_file(log_message(get_value))
-  sleep 60
-end
+write_to_file(log_message(get_value))

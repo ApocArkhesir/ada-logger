@@ -10,5 +10,5 @@ crontab -e
 
 Then, simply add a new task. I would like the script to be executed every hour, so I'm going to write:
 ```
-0 * * * * <path to my script>
+0 * * * * <path to my script> ; ruby ada-logger.rb
 ```
